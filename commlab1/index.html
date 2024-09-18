@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Stylesheets and Fonts -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry @ NYU Abu Dhabi?</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+            <li><a id="nav-home" href="#home">Home</a></li>
+            <li><a id="nav-gallery" href="#gallery">Food Gallery</a></li>
+            <li><a id="nav-about" href="#about">About</a></li>
+            <li><a id="nav-contact" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1 style="padding-bottom: 0px;" align="center">NYUAD Freshman Food Guide</h1>
+        <h3 style="padding-bottom: 10px;" align="center">Welcome to your home for the next 4 :) Here's some places on campus where you'll eat wonderful food and make even more wonderful memories!</h3>
+      <!--    <video style="margin-top: 0;" controls>
+            <source src="media/video.mp4" type="video/mp4"> -->
+            <div class="video-responsive">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/T99tj3PaQnQ?si=-pT08vUHmfPgu-zJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </video>  
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h1 align="center">Gallery</h1>
+        <h3 align="center">Here are some of my favorite meals on campus!</h3>
+        <div class="carousel">
+            <div class="carousel-images">
+                <!-- Carousel Images -->
+                <img src="media/1.jpg" alt="Image 1">
+                <img src="media/2.jpg" alt="Image 2">
+                <img src="media/3.jpg" alt="Image 3">
+                <img src="media/4.jpg" alt="Image 4">
+                <img src="media/5.jpg" alt="Image 5">
+                <img src="media/6.jpg" alt="Image 6">
+                <img src="media/7.jpg" alt="Image 7">
+                <img src="media/8.jpg" alt="Image 8">
+            </div>
+            <button class="prev-btn">←</button>
+            <button class="next-btn">→</button>
+            <p id="imageDescription">Image 1</p> <!-- Initial description -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1>About me</h1>
+        <div class="content">
+            <div class="about-image">
+                <img src="media/uditi.jpg" alt="Uditi">
+            </div>
+            <div class="about-text">
+                <p>Hi! My name is Uditi and I made this website for my Communications Lab class. I'm a sophomore majoring in CS and IM, with a minor in applied math. I'm from India and I grew up in Dubai. I'm passionate about trying food and cuisines from different countries and NYUAD is a great place to do this! <br>There's a variety of cusines such as Indian, Arab, Mediterranian, South American, Japanese (sushi), and of course, American. As a vegetarian, I initially struggled with finding healthy, low-oil, and high protein food options - but over my freshman year, I now have spots I can definitely count on for a good satiating meal. I show you some of my and my friends' favorite food spots, and invite you to send me your favorite foods!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1 align="center">Contact us to submit your favorite food on campus</h1>
+        <p>Your submissions to the photo gallery!</p>
+        <form id="photoForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="title">Photo Title:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="social-buttons">
+            <a href="mailto:us2133@nyu.edu" class="email-btn">
+                <i class="fa fa-envelope"></i>
+            </a>
+            <a href="https://www.instagram.com/uditisharma" target="_blank" class="instagram-btn">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        
+    </section>
+
+    <!-- Script References -->
+    <script src="script.js"></script>
+</body>
+</html>

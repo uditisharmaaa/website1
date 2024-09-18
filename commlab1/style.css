@@ -1,0 +1,261 @@
+/*make design consistent for headers and each section should have seperation of color and add form.*/ 
+
+body {
+    margin: 0;
+    font-family: 'Indie Flower', sans-serif;
+    font-size: 23px; 
+    background-color: #C5CBE3;
+    color: #4056A1;
+    padding-top: 30px;
+    
+}
+
+
+#navbar {
+    background-color: #efe2ba; 
+    color: black;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+}
+
+#navbar li {
+    flex: 1;
+}
+
+#navbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid transparent;
+}
+
+#navbar li a:hover, #navbar li a.active {
+    background-color: #d79922; 
+    color: #000;
+    font-weight: bold;
+}
+
+/* 
+video  {
+
+    display: block;  
+    margin: 0 auto;  
+    background: none no-repeat center center transparent;
+    background-size: contain;
+    height: auto;  
+    max-width: 100%;  
+    width: calc(100% - 25%); 
+    max-width: 799px;  
+
+}
+ */
+ .video-responsive {
+    position: relative;  /* Establishes a positioning context for absolute positioning */
+    padding-top: 56.25%;  /* Aspect ratio of 16:9 */
+    height: 0;  /* Collapse the div and let content expand as per padding-top */
+    overflow: hidden;  /* Prevents content from spilling out */
+    width: 70%;  /* Set the width of the video container, not the iframe */
+    margin-left: auto;  /* Centers the element horizontally */
+    margin-right: auto;  /* Centers the element horizontally */
+}
+
+.video-responsive iframe {
+    position: absolute;  /* Absolute position within its parent */
+    top: 0;  /* Aligns top edge to the parent */
+    left: 0;  /* Aligns left edge to the parent */
+    width: 100%;  /* Takes full width of its parent, which is .video-responsive */
+    height: 100%;  /* Takes full height of its parent */
+}
+
+
+.carousel {
+    width: 500px;
+    max-width: 100%; 
+    overflow: hidden;
+    position: relative;
+    margin: auto; 
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+  }
+  
+  .carousel-images img {
+    width: 500px; 
+    height: 600px; 
+    flex-shrink: 0; 
+  }
+  
+  button.prev-btn, button.next-btn {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    background-color: #efe2ba;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 28px; 
+    z-index: 10;
+}
+
+button.prev-btn {
+    left: 10px; 
+}
+button.next-btn {
+    right: 10px;
+}  
+
+#imageDescription {
+    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 23px; 
+    color: #4056A1;
+
+}
+
+  section {
+    padding: 20px; 
+    min-height: 300px;
+    box-sizing: border-box; 
+    margin-bottom: 20px; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+
+}
+
+#contact {
+    padding-bottom: 100px; /* Adjust this value as needed */
+}
+
+/* FORM */
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #efe2ba;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+button:hover {
+    background-color: #d79922;
+}
+
+/* ABOUT SECTION */
+#about {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+#about h1 {
+    
+    font-family: 'Dela Gothic One';
+    margin-bottom: 10px; 
+    text-align: center; 
+}
+
+#about .about-text p, #about .about-image img {
+    text-align: left; 
+}
+
+#about .content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about-image {
+    flex: 1; /* Takes up 1 part of the flex container */
+    max-width: 40%; /* Limits the image container width to 40% of the parent container */
+}
+
+.about-image img {
+    width: 100%; /* Makes the image fill the container */
+    height: auto; /* Keeps the aspect ratio of the image */
+}
+
+.about-text {
+    flex: 2; /* Takes up 2 parts of the flex container */
+    max-width: 60%; /* Limits the text container width to 60% of the parent container */
+}
+
+section h3 {
+    font-weight: normal; 
+
+    font-size: 22px;  
+    padding-left: 30px;
+    padding-right: 30px;
+
+    color: #4056A1;      /
+    font-family: 'Dela Gothic One', sans-serif;  
+}
+
+
+section h1 {
+    font-weight: normal; 
+
+    font-size: 36px;  
+    color: #F13C20;      
+    font-family: 'Dela Gothic One', sans-serif;  
+}
+
+
+.social-buttons {
+    text-align: center; /* Center align the buttons */
+    padding: 20px; /* Padding around the buttons */
+}
+
+.social-buttons a {
+    margin: 0 10px; /* Space between buttons */
+    font-size: 24px; /* Icon size */
+    color: #333; /* Icon color */
+    text-decoration: none; /* Removes underline */
+}
+
+.social-buttons a:hover {
+    color: #555; /* Icon hover color */
+}
